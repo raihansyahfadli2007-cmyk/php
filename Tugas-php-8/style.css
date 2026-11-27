@@ -1,0 +1,523 @@
+
+/* =========================
+   RESET DAN DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: #1c1e21;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #4267b2;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #4267b2;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #333;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #4267b2;
+}
+
+/* =========================
+   LAYOUT TIMELINE
+========================= */
+
+.timeline-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    align-items: start;
+}
+
+/* =========================
+   KARTU PROFIL
+========================= */
+
+.profile-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e8e5ff;
+    margin-bottom: 15px;
+}
+
+.profile-card h2 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    color: #777;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   TOMBOL
+========================= */
+
+.btn {
+    display: inline-block;
+    background: #4267b2;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #34518f;
+}
+
+.full {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* =========================
+   KARTU STATUS
+========================= */
+
+.timeline-content {
+    min-width: 0;
+}
+
+.post-card {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.post-card h2 {
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.post-card > p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 23px;
+    margin: 25px 0 15px;
+}
+
+/* =========================
+   FORM STATUS
+========================= */
+
+textarea,
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    margin: 7px 0 15px;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+textarea:focus,
+input:focus {
+    border-color: #4267b2;
+}
+
+.post-card form .btn {
+    margin-top: 5px;
+}
+
+/* =========================
+   STATUS PENGGUNA
+========================= */
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.post-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-header strong {
+    font-size: 16px;
+}
+
+.post-header p {
+    color: #777;
+    font-size: 13px;
+}
+
+.post-header small {
+    color: #999;
+    font-size: 12px;
+}
+
+.post-content {
+    font-size: 16px;
+    overflow-wrap: anywhere;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+/* =========================
+   ALERT
+========================= */
+
+.alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* =========================
+   HALAMAN EDIT PROFIL
+========================= */
+
+.auth-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.auth-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.auth-card > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.auth-card label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.auth-link {
+    margin-top: 20px;
+}
+
+/* =========================
+   UPLOAD FOTO
+========================= */
+
+.photo-upload {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.photo-upload img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e8e5ff;
+    margin-bottom: 15px;
+}
+
+.photo-upload input {
+    margin-top: 10px;
+    background: #f8f8ff;
+}
+
+.photo-upload small {
+    display: block;
+    color: #777;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .timeline-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .post-card {
+        padding: 17px;
+    }
+}
+
+
+/* =========================
+   HALAMAN BERANDA
+========================= */
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HERO / SAMBUTAN */
+
+.hero {
+    background: linear-gradient(135deg, #4267b2, #6c8ed4);
+    color: white;
+    padding: 80px 0;
+    margin-bottom: 35px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 700px;
+}
+
+.hero .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* TOMBOL TERANG */
+
+.btn-light {
+    background: white;
+    color: #4267b2;
+}
+
+.btn-light:hover {
+    background: #e9edf5;
+    color: #34518f;
+}
+
+/* BAGIAN FITUR */
+
+.features {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    flex: 1;
+}
+
+.features h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* GRID FITUR */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* KARTU FITUR */
+
+.feature-card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+}
+
+.feature-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+    color: #4267b2;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #ffffff;
+    text-align: center;
+    padding: 22px 15px;
+    margin-top: auto;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+}
+
+footer p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* RESPONSIVE BERANDA */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features h2 {
+        font-size: 23px;
+    }
+}
+
+/* Merapikan posisi menu navbar agar sejajar tengah */
+.navbar .container,
+.navbar-nav,
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Menyamakan ukuran dan padding tombol Masuk dengan Daftar */
+.navbar a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+}
